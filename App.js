@@ -50,9 +50,9 @@ function clicked(value, question) {
       return prevAnswers.map((each) => {
         if (each.question === question) {
           const updatedOptions = each.option.map((option) => {
-            return option.value === value ? {...option, isSelected: !option.isSelected } : {...option, isSelected: false };
+            return option.value === value ? {option, isSelected: !option.isSelected } : {option, isSelected: false };
           });
-          return {...each, option: updatedOptions };
+          return {each, option: updatedOptions };
         } else {
           return each; 
         }
