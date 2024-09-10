@@ -82,10 +82,11 @@ h1 {
  
 }
 .ques{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-shadow: 0px 3px 0px lightgrey;
     color: #293264;
+    max-width: 800px;
 }
 .score{
     font-size: 1.5rem;
