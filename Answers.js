@@ -36,6 +36,9 @@ export default function Asnwers(props){
             else if(each.isCorrect){
                return {backgroundColor: "#94D7A2" }
             }
+            else{
+               return{color:"grey"}
+            }
            }
             
             return ( 
