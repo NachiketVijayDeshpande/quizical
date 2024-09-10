@@ -37,7 +37,7 @@ export default function Asnwers(props){
                return {backgroundColor: "#94D7A2" }
             }
             else{
-               return {color:"grey"}
+               return {color: "grey" }
             }
            }
             
