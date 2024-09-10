@@ -11,7 +11,7 @@ export default function Asnwers(props){
             return ( 
                 <div style={{backgroundColor: each.isSelected?"#D6DBF5":"#F5F7FB"}} onClick={()=>props.click(each.value,props.question)} className="radio-options" id={each.id}>
            
-                <label  /*onClick={()=>props.click(each.value,props.question)}*/>{he.decode(each.value)}</label>
+                <label >{he.decode(each.value)}</label>
                 </div>)
       })
       
@@ -37,7 +37,7 @@ export default function Asnwers(props){
                return {backgroundColor: "#94D7A2" }
             }
             else{
-               return {color:"#D3D3D3"}
+               return {color:"grey"}
             }
            }
             
