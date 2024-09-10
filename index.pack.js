@@ -921,9 +921,9 @@ function App() {
             return prevAnswers.map(function (each) {
                 if (each.question === question) {
                     var updatedOptions = each.option.map(function (option) {
-                        return option.value === value ? { option: option, isSelected: !option.isSelected } : { option: option, isSelected: false };
+                        return option.value === value ? { ...option , isSelected: !option.isSelected } : { ...option , isSelected: false };
                     });
-                    return { each: each, option: updatedOptions };
+                    return { ...each, option: updatedOptions };
                 } else {
                     return each;
                 }
