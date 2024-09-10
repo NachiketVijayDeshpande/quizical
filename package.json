@@ -1,0 +1,22 @@
+{
+  "name": "Scrim-s0h1h5cha0",
+  "description": "https://v2.scrimba.com/s0h1h5cha0",
+  "scripts": {
+    "watch": "webpack -w",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "nanoid": "3.1.28",
+    "he": "1.2.0",
+    "babel": "6.23.0",
+    "webpack": "^2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0",
+    "babel-loader": "^7.0",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*"
+  }
+}

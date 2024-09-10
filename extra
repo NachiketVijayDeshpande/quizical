@@ -1,0 +1,21 @@
+import React from 'react'
+import he from 'he'
+
+
+
+export default function Asnwers(props){
+           console.log(props.option)
+             const shuffledAnswers = props.option.sort(() => 0.5 - Math.random());
+
+    const optionelement = shuffledAnswers.map((each)=>{
+        
+       return ( 
+                <div style={{backgroundColor: each.isSelected?"lightblue":"green"}} onClick={()=>props.click(each.value,props.question)} className="radio-options" id={each.id}>
+                <input  className="radio" id={each.value} type="radio" value={each.value} name={props.question}/>
+                <label  /*onClick={()=>props.click(each.value,props.question)}*/>{he.decode(each.value)}</label>
+                </div>)
+    })
+    return (
+       optionelement
+    )
+}
